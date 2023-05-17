@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container2">
+        <div class="outer-box">
+
+            <!-- Home page -->
+            <div class="inner-box home-page">
+                <img class="v3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7QvbrN9ldr5sm9KaXCBY45jT9SZfZlqGLR5Vrx7PHqqHNpl6U47DaAXRR45kR5UOois&usqp=CAU" alt="" style="width: 60px;">
+               <h1 class="title">BUDGET CALCULATOR</h1>
+
+                <form>
+                    <div class="btn">
+                        <button type="button" class="color-btn" onclick="logIn()">LOG IN</button>
+                        <button type="button" class="color-btn" onclick="signUp()">SIGN UP</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- logIn page -->
+            <div class="inner-box signIn-page">
+               
+                <form>
+                    <div class="input-field">
+                        <input type="email" name="email" id="email2" placeholder="Email..">
+                        <input type="password" name="password" id="password2" placeholder="password..">
+                        <button type="button" class="signinBtn btn" onclick="welcome2()">LOG IN</button>
+                        <a href="#">Forget password</a>
+                    </div>
+                </form>
+ 
+             </div>
+
+             <!-- SignUp page -->
+             <div class="inner-box signUp-page">
+               
+                <form>
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" placeholder="Username">
+                        <input type="email" name="email" id="email" placeholder="example@.com">
+                        <input type="password" name="password" id="password" placeholder="password..">
+                        <button type="button" class="signupBtn btn" onclick="welcome1()">SIGN UP</button>
+                        <p>Already have an account? <a href="#" onclick="goToSignIn()">login</a></p>
+
+                    </div>
+                </form>
+ 
+             </div>
+
+        </div>
+        
+    </div>
+     
+    
+    <script src="script.js"></script>
+
+    
+    
+</body>
+</html>
